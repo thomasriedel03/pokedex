@@ -1,0 +1,107 @@
+.grass {
+      background-image: url("./../assets/img/types/grass.webp");
+      background-size: cover;
+      background-color: lightgreen;
+}
+
+.fire {
+      background-image: url("./../assets/img/types/fire.webp");
+      background-size: cover;
+      background-color: orange;
+}
+
+.water {
+      background-image: url("./../assets/img/types/water.webp");
+      background-size: cover;
+      background-color: rgb(0, 115, 255);
+}
+
+.poison {
+      background-image: url("./../assets/img/types/poison.webp");
+      background-size: cover;
+      background-color: purple;
+}
+
+.bug {
+      background-image: url("./../assets/img/types/bug.webp");
+      background-size: cover;
+      background-color: green;
+}
+
+.dark {
+      background-image: url("./../assets/img/types/dark.webp");
+      background-size: cover;
+      background-color: darkslategrey;
+}
+
+.electric {
+      background-image: url("./../assets/img/types/electric.webp");
+      background-size: cover;
+      background-color: yellow;
+}
+
+.normal {
+      background-image: url("./../assets/img/types/normal.webp");
+      background-size: cover;
+      background-color: rgb(161, 189, 169);
+}
+
+.flying {
+      background-image: url("./../assets/img/types/flying.webp");
+      background-size: cover;
+      background-color: lightblue;
+}
+
+.psychic {
+      background-image: url("./../assets/img/types/psychic.webp");
+      background-size: cover;
+      background-color: pink;
+}
+
+.ghost {
+      background-image: url("./../assets/img/types/ghost.webp");
+      background-size: cover;
+      background-color: darkblue;
+}
+
+.fighting {
+      background-image: url("./../assets/img/types/fighting.webp");
+      background-size: cover;
+      background-color: palevioletred;
+}
+
+.fairy {
+      background-image: url("./../assets/img/types/fairy.webp");
+      background-size: cover;
+      background-color: rgb(200, 50, 200);
+}
+
+.steel {
+      background-image: url("./../assets/img/types/steel.webp");
+      background-size: cover;
+      background-color: gray;
+}
+
+.ice {
+      background-image: url("./../assets/img/types/ice.webp");
+      background-size: cover;
+      background-color: lightblue;
+}
+
+.ground {
+      background-image: url("./../assets/img/types/ground.webp");
+      background-size: cover;
+      background-color: rgb(255, 179, 0);
+}
+
+.rock {
+      background-image: url("./../assets/img/types/rock.webp");
+      background-size: cover;
+      background-color: burlywood;
+}
+
+.dragon {
+      background-image: url("./../assets/img/types/dragon.webp");
+      background-size: cover;
+      background-color: blue;
+}

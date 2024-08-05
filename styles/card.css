@@ -1,0 +1,68 @@
+.card {
+      width: 200px;
+      height: 350px;
+      background-color: rgb(12, 61, 77);
+      margin: 20px;
+      border-radius: 16px;
+}
+
+.card h3 {
+      text-align: center;
+}
+
+.card-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 16px;
+      height: 100px;
+}
+
+.pokemon-img-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 150px;
+}
+
+.pokemon-img {
+      width: 70%;
+}
+
+.types-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+}
+
+.type {
+      padding: 8px;
+      border: 1px solid white;
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+}
+
+.tooltip {
+      position: relative;
+      display: inline-block;
+}
+
+.tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+      visibility: visible;
+}
