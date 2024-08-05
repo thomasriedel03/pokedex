@@ -7,6 +7,7 @@
 
             <script src="./scripts/script.js"></script>
             <script src="./scripts/fetch.js"></script>
+            <script src="./scripts/loadMore.js"></script>
             <script src="./scripts/templates.js"></script>
             <script src="./scripts/assets.js"></script>
 
@@ -22,8 +23,26 @@
             <header></header>
             <div id="content" class="content">
                   <section id="card-area" class="card-area"></section>
-                  <section>
-                        <button onclick="renderCards()">load more</button>
+                  <section class="center-content load-more-section">
+                        <div class="load-more-button-wrapper">
+                              <button id="load-20-more-button" class="load-more-button disabled" onclick="renderCards(20)">
+                                    Load 20 more
+                              </button>
+                              <div class="cursor-overlay"></div>
+                        </div>
+                        <div class="load-more-button-wrapper">
+                              <button id="load-100-more-button" class="load-more-button disabled" onclick="renderCards(100)">
+                                    Load 100 more
+                              </button>
+                              <div class="cursor-overlay"></div>
+                        </div>
+                        <div class="load-more-button-wrapper">
+                              <button id="load-all-button" class="load-more-button disabled" onclick="loadAll()">Load all</button>
+                              <div class="cursor-overlay"></div>
+                        </div>
+                  </section>
+                  <section id="dialog-section">
+                        <div id="dialog-container" class="dialog-container"></div>
                   </section>
             </div>
             <footer></footer>

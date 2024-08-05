@@ -1,13 +1,17 @@
 async function init() {
-      await fetchFive("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0");
-      console.log("ersten zehn geladen");
-      renderCards();
+      await fetchPokemons("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0");
+      console.log("ersten zwanzig geladen");
+      checkLoadMoreButtons();
+      renderCards(20);
 }
 
-function renderCards() {
+function renderCards(increment) {
+      disableLoadMoreButtons();
+
+      loadCounter = loadCounter + increment;
       let cardArea = document.getElementById("card-area");
-      cardArea.innerHTML = "";
-      for (let cardIndex = 0; cardIndex < loadCounter; cardIndex++) {
+
+      for (let cardIndex = loadCounter - increment; cardIndex < loadCounter; cardIndex++) {
             try {
                   cardArea.innerHTML += generateCardHTML(cardIndex);
             } catch (error) {
@@ -15,7 +19,6 @@ function renderCards() {
             }
             renderTypes(cardIndex);
       }
-      loadCounter = loadCounter + 20;
 }
 
 function renderTypes(cardIndex) {

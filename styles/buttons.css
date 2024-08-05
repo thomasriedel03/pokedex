@@ -1,0 +1,39 @@
+button {
+      cursor: pointer;
+      text-align: center;
+      color: white;
+      padding: 16px;
+      border-radius: 16px;
+      font-size: 16px;
+}
+
+.load-more-button-wrapper {
+      position: relative;
+      display: inline-block;
+}
+
+.load-more-button {
+      background-color: orange;
+      border: none;
+}
+
+.disabled {
+      opacity: 0.6;
+      pointer-events: none;
+      cursor: not-allowed;
+}
+
+.cursor-overlay {
+      display: none;
+}
+
+.disabled + .cursor-overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: not-allowed;
+      z-index: 1;
+}

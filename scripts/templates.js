@@ -3,7 +3,7 @@ function generateCardHTML(i) {
         <div class="card">
             <div class="card-header">
                 <h3>#${i + 1}</h3>
-                <h3>${pokemons[i].name}</h3>
+                <h3>${pokemons[i].name.charAt(0).toUpperCase()}${pokemons[i].name.slice(1)}</h3>
                 <h3 class="whitespace"></h3>
             </div>
             <div class="pokemon-img-container">

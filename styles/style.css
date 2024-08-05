@@ -22,6 +22,11 @@ header {
       flex-wrap: wrap;
 }
 
+.load-more-section {
+      height: 75px;
+      gap: 32px;
+}
+
 footer {
       height: 100px;
       background-color: rgb(8, 33, 41);

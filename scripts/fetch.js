@@ -1,12 +1,12 @@
 const BASE_URL = "https://pokeapi.co/api/v2/";
 
-async function fetchFive(path) {
-      let currentFiveURLs = await loadData(path);
-      nextURL = currentFiveURLs.next;
+async function fetchPokemons(path) {
+      let currentURLs = await loadData(path);
+      nextURL = currentURLs.next;
       console.log(nextURL);
       let URLs = [];
-      for (let URLIndex = 0; URLIndex < currentFiveURLs.results.length; URLIndex++) {
-            URLs.push(currentFiveURLs.results[URLIndex].url);
+      for (let URLIndex = 0; URLIndex < currentURLs.results.length; URLIndex++) {
+            URLs.push(currentURLs.results[URLIndex].url);
       }
       for (let pokemonIndex = 0; pokemonIndex < URLs.length; pokemonIndex++) {
             let pokemon = await loadData(URLs[pokemonIndex]);
@@ -14,10 +14,11 @@ async function fetchFive(path) {
             console.log("ein Pokemon geladen");
       }
 
-      if (pokemons.length < 70) {
-            fetchFive(nextURL);
+      if (pokemons.length < 200) {
+            fetchPokemons(nextURL);
       } else {
             console.log("alle geladen");
+            enableLoadAllButton();
       }
 }
 
